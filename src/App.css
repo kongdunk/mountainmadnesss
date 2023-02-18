@@ -40,3 +40,38 @@
 .read-the-docs {
   color: #888;
 }
+
+.stairs {
+  position: relative;
+  right: -27.25rem;
+  width: 25rem;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
+}
+
+.stairs2 {
+  position: relative;
+  right: -13.25rem;
+  width: 25rem;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
+}
+
+.stairs3 {
+  position: relative;
+  right: 0.75rem;
+  width: 25rem;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
+}
+
+.stairs4 {
+  position: relative;
+  right: 14.75rem;
+  width: 25rem;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg)
