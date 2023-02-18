@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { motion } from 'framer-motion'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [blockOne, setBlockOne] = useState(true)
 
   return (<>
     <input type="text" />
-    <div className="stairsContainer">
-    
+    <div className="App">
       <div className='stairs'>
 
       </div>
@@ -17,22 +18,11 @@ function App() {
       </div>
       <div className='stairs3'>
       
-      </div>
-      <div className='stairs4'>
+      </div>  
+      <motion.div className='stairs4'/>
       
       </div>
-      
-     
-      <div className='stairs5'>
-      
-      
-      </div>
-      
-      
-    </div>
-    <div className='object'>
-      
-      </div>
+    
     
     </>
   )

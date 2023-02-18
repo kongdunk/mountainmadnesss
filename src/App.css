@@ -24,20 +24,18 @@
   position: relative;
   right: -4rem;
   width: 25rem;
-  height: 4rem;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border: solid 3px lightskyblue;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
 }
 
 .stairs2 {
   position: relative;
   right: 0rem;
   width: 25rem;
-  height: 4rem;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border: solid 3px lightskyblue;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
 }
 
 .stairs3 {
@@ -45,45 +43,16 @@
   bottom: 0;
   right: 4rem;
   width: 25rem;
-  height: 4rem;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border: solid 3px lightskyblue;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
 }
 
 .stairs4 {
   position: relative;
-  bottom: 0;
-  right: 8rem;
+  right: 14.75rem;
   width: 25rem;
-  height: 4rem;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border: solid 3px lightskyblue;
+  height: 12rem;
+  background-color: orange;
+  transform: skew(-30deg);
 }
-.stairs5 {
-  margin-left:100px;
-  position: relative;
-  bottom: 0;
-  right: 8rem;
-  width: 25rem;
-  height: 4rem;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border: solid 3px lightskyblue;
-  margin-right:100px;
-}
-.object {
- display:flex;
- justify-content:left;
-  bottom: 0;
-  right: 8rem;
-  width: 50px;
-  height: 50px;
-  margin-right: 100px;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border: solid 3px pink;
-  margin-right:150px;
-}
-
