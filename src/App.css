@@ -1,36 +1,6 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+* {
+  background-color: black;
+  overflow: hidden;
 }
 
 .card {
@@ -41,37 +11,45 @@
   color: #888;
 }
 
+.stairsContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
 .stairs {
   position: relative;
-  right: -27.25rem;
+  right: -4rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: blue;
 }
 
 .stairs2 {
   position: relative;
-  right: -13.25rem;
+  right: 0rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: white;
 }
 
 .stairs3 {
   position: relative;
-  right: 0.75rem;
+  bottom: 0;
+  right: 4rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: blue;
 }
 
 .stairs4 {
   position: relative;
-  right: 14.75rem;
+  bottom: 0;
+  right: 8rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg)
+  height: 4rem;
+  background-color: white;
+}
