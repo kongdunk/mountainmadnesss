@@ -7,7 +7,8 @@ function App() {
 
   return (<>
     <input type="text" />
-    <div className="App">
+    <div className="stairsContainer">
+    
       <div className='stairs'>
 
       </div>
@@ -20,7 +21,19 @@ function App() {
       <div className='stairs4'>
       
       </div>
+      
+     
+      <div className='stairs5'>
+      
+      
+      </div>
+      
+      
     </div>
+    <div className='object'>
+      
+      </div>
+    
     </>
   )
 }
