@@ -1,9 +1,3 @@
-* {
-  background-color: black;
-  overflow: hidden;
-  background-image: url("background.gif");
-}
-
 .card {
   padding: 2em;
 }
@@ -63,4 +57,11 @@
 .firstClimbStair {
   right: 7rem;
   display: flex;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/background.jpg");
+  background-size: cover;
 }
