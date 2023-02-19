@@ -16,7 +16,7 @@
   background-image: url("/mountainbg.webp");
   background-size: cover;
 }
-#translate-form {
+.translate-form {
   position: absolute;
 }
 #mario {
