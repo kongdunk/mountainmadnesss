@@ -67,8 +67,10 @@
 }
 
 #mario {
+  margin-left: 15rem;
   position: absolute;
   height: 15%;
   display: flex;
   bottom: 0;
 }
+
