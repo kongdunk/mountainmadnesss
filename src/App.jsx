@@ -8,9 +8,7 @@ function App() {
   const [blockOne, setBlockOne] = useState(true)
 
   return (<>
-    <div className='mario'>
-      <img src="mario.png" alt="" srcset="" />
-    </div>
+      <img id='mario' src="mario.png" alt="" srcset="" />
     <div className='mainContainer'>
     <input type="text" />
     </div>

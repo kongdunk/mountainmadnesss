@@ -65,3 +65,10 @@
   background-image: url("/background.jpg");
   background-size: cover;
 }
+
+#mario {
+  position: absolute;
+  height: 15%;
+  display: flex;
+  bottom: 0;
+}
