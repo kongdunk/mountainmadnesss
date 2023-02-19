@@ -4,14 +4,14 @@ import './App.css'
 import { motion } from 'framer-motion'
 
 function App() {
-  const [xMove, setXMove] = useState(100)
-  const [yMove, setYMove] = useState(0)
+  const [xMove, setXMove] = useState(5)
+  const [yMove, setYMove] = useState(10)
   const [blockOne, setBlockOne] = useState(true)
   let language = " ";
   const handleClick = () => {
-    setXMove(xMove + 145)
-    setYMove(yMove - 70)
-    
+
+    setXMove(xMove + 12.5)
+    setYMove(yMove + 10.5)
   }
 
   let translateFrom = "en";
@@ -47,8 +47,8 @@ function App() {
   });
   
   return (<>
-    <motion.img animate={{ x: xMove, y: yMove, transition: { duration: 1 } }}  id='mario' src="mario.png" alt="" srcset="" />
-    <div className='mainContainer'>
+
+  <div className='mainContainer'>
     <form id="translate-form">
      
       <textarea id="user-input" placeholder='Word'></textarea>
@@ -63,6 +63,18 @@ function App() {
       <option value="hi">Hindi</option>
       <option value="ru">Russian</option>
     </select>
+    <button className='marioButton' onClick={() => handleClick()}> move mario</button>
+    <motion.img id='mario' src="mario.png" alt="mario" style={{bottom:0 , left:`${xMove}vw`, bottom:`${yMove}vh` }}/>
+      <div className='stairsContainer'>
+        <div className='stair'></div>
+        <div className='stair'></div>
+        <div className='stair'></div>
+        <div className='stair'></div>
+        <div className='stair'></div>
+        <div className='stair'></div>
+        <div className='stair'></div>
+        <div className='stair'></div>
+      </div>
     </div>
     </> 
   )
