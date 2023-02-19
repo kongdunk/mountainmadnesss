@@ -1,6 +1,7 @@
 * {
   background-color: black;
   overflow: hidden;
+  background-image: url("background.gif");
 }
 
 .card {
@@ -10,10 +11,13 @@
 .read-the-docs {
   color: #888;
 }
-
+.container {
+  display: flex;
+}
 .stairsContainer {
   width: 100vw;
   height: 100vh;
+  margin-top: -6rem;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -21,38 +25,42 @@
 }
 
 .stairs {
-  position: relative;
   right: -4rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: blue;
 }
 
 .stairs2 {
-  position: relative;
   right: 0rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: white;
 }
 
 .stairs3 {
-  position: relative;
-  bottom: 0;
   right: 4rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: blue;
 }
 
 .stairs4 {
-  position: relative;
-  right: 14.75rem;
+  right: 8rem;
   width: 25rem;
-  height: 12rem;
-  background-color: orange;
-  transform: skew(-30deg);
+  height: 4rem;
+  background-color: white;
+}
+
+.cube {
+  margin: 1rem;
+  background-color: green;
+  width: 3rem;
+  height: 3rem;
+  z-index: 99;
+}
+
+.firstClimbStair {
+  right: 7rem;
+  display: flex;
 }

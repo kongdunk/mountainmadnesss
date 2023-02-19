@@ -9,20 +9,7 @@ function App() {
 
   return (<>
     <input type="text" />
-    <div className="App">
-      <div className='stairs'>
-
-      </div>
-      <div className='stairs2'>
-      
-      </div>
-      <div className='stairs3'>
-      
-      </div>  
-      <motion.div className='stairs4'/>
-      
-      </div>
-    
+    <div></div>
     
     </>
   )
