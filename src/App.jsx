@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 function App() {
   const [xMove, setXMove] = useState(5)
-  const [yMove, setYMove] = useState(10)
+  const [yMove, setYMove] = useState(7)
   const [blockOne, setBlockOne] = useState(true)
   let language = " ";
   const handleClick = () => {
@@ -63,8 +63,7 @@ function App() {
       <option value="hi">Hindi</option>
       <option value="ru">Russian</option>
     </select>
-    <button className='marioButton' onClick={() => handleClick()}> move mario</button>
-    <motion.img id='mario' src="mario.png" alt="mario" style={{bottom:0 , left:`${xMove}vw`, bottom:`${yMove}vh` }}/>
+    <motion.img id='mario' src="mario.png" alt="mario" style={{left:`${xMove}vw`, bottom:`${yMove}vh` }}/>
       <div className='stairsContainer'>
         <div className='stair'></div>
         <div className='stair'></div>
