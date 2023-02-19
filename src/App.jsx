@@ -13,12 +13,43 @@ function App() {
     setYMove(yMove - 70)
   }
 
+  let translateFrom = "en-GB";
+  let translateTo = "fr-FR";
+
+  let userInput, outputDisplayTextBox;
+
+  let translateForm = document.getElementById("translate-form");
+
+  translateForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      userInput = document.getElementById("user-input").value;
+      console.dir(userInput);
+      let apiUrl = `https://api.mymemory.translated.net/get?q=${userInput}&langpair=${translateFrom}|${translateTo}`;
+      fetch(apiUrl)
+          .then(res => {
+              if (!res.ok) {
+                  throw Error(res.statusText);
+              } return (res.json())
+          })
+          .then(data => {
+              console.log(data);
+              console.log(data.responseData.translatedText);
+              outputDisplayTextBox = document.getElementById("output-display");
+              outputDisplayTextBox.value = data.responseData.translatedText;
+          })
+  })
+
   return (<>
-    <button onClick={() => handleClick()}> move mario </button>
     <motion.img animate={{ x: xMove, y: yMove, transition: { duration: 1 } }}  id='mario' src="mario.png" alt="" srcset="" />
-    <div className='mainContainer'>
-    <input type="text" />
-    </div>
+    <form id="translate-form">
+      <div className='mainContainer'>
+      <textarea id="user-input" placeholder='Word'></textarea>
+      <textarea id="output-display" placeholder='User Guess' ></textarea>
+      <button onClick={()=> handleClick()}id="submit">Submit</button>
+      </div>
+    
+    </form>
+ 
     </>
   )
 }
